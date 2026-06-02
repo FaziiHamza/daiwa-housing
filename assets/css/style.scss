@@ -160,12 +160,13 @@ button {
             }
         }
 
-        .action-btns {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
     }
+}
+
+.action-btns {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-line {
@@ -272,12 +273,14 @@ button {
 }
 
 .btn-lg {
-    padding: 10px 20px !important;
+    padding: 10px 18px !important;
     font-size: 20px !important;
+    border-radius: 20px !important;
     height: 56px !important;
 
     img {
-        height: 32px !important;
+        width: 30px;
+        height: auto;
     }
 }
 
@@ -1653,6 +1656,7 @@ button {
         border-radius: 0px !important;
         margin-bottom: 20px;
         overflow: hidden;
+        box-shadow: none;
     }
 
     .accordion-button {
@@ -1663,6 +1667,8 @@ button {
         font-weight: 700;
         font-size: 20px;
         line-height: 24px;
+        box-shadow: none;
+        border: none;
         color: #50452C;
         padding: 18px 20px;
         gap: 20px;
@@ -1685,7 +1691,8 @@ button {
 
     .accordion-body {
         background-color: #FCFBF7;
-
+        box-shadow: none;
+        border: none;
         border-radius: 0px;
         padding: 24px 70px;
 
@@ -1721,4 +1728,99 @@ button {
         background-position: center;
         transform: none !important;
     }
+}
+
+.time-to-check-section {
+    padding: 100px 0px;
+    background-image: url(../images/ttc-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .ttc-card {
+        padding: 56px 40px;
+        gap: 40px;
+        width: 100%;
+        background: rgba(255, 255, 255, 0.88);
+        border-radius: 10px;
+        margin-bottom: 100px;
+
+        h1 {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 48px;
+            line-height: 58px;
+            color: #000000;
+            margin-bottom: 40px;
+        }
+
+        h4 {
+            font-family: 'Noto Sans JP';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 47px;
+            color: #000000;
+
+            b {
+                font-family: 'Noto Sans JP';
+            }
+        }
+    }
+}
+
+.footer {
+    width: 100%;
+    padding: 50px 0px;
+    background: #fff;
+
+    .f-row {
+        width: 100%;
+        display: flex;
+        align-items: center;
+
+        .content {
+            width: calc(100% - 400px);
+
+            .logo {
+                height: 101px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-family: 'Noto Sans JP';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 29px;
+                color: #000000;
+                margin-bottom: 15px;
+            }
+        }
+
+        .vector {
+            width: 400px;
+        }
+    }
+}
+.bottom {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+gap: 10px;
+width: 100%;
+height: 63px;
+background: #3B3B3B;
+span {
+font-family: 'Noto Sans JP';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 59px;
+display: flex;
+align-items: center;
+color: #FFFFFF;
+}
 }

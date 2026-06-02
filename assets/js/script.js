@@ -28,10 +28,10 @@ $(document).ready(function () {
   // Header Active
   $(window).scroll(function () {
     const scroll = $(window).scrollTop();
-    if (scroll > 0) {
-      $("#header").addClass("active");
+    if (scroll > 80) {
+      $(".header").addClass("active");
     } else {
-      $("#header").removeClass("active");
+      $(".header").removeClass("active");
     }
   });
 });

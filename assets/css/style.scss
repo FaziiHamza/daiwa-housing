@@ -195,6 +195,7 @@ button {
     transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 
     &:hover {
+        cursor: pointer;
         transform: translateY(-4px) !important;
         box-shadow: 0 8px 20px rgba(6, 199, 85, 0.45) !important;
     }
@@ -226,6 +227,7 @@ button {
     transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 
     &:hover {
+        cursor: pointer;
         transform: translateY(-4px) !important;
         box-shadow: 0 8px 20px rgba(243, 169, 0, 0.45) !important;
     }
@@ -257,6 +259,7 @@ button {
     transition: transform 0.25s ease, box-shadow 0.25s ease !important;
 
     &:hover {
+        cursor: pointer;
         transform: translateY(-4px) !important;
         box-shadow: 0 8px 20px rgba(179, 106, 76, 0.45) !important;
     }
@@ -361,7 +364,10 @@ button {
             font-weight: 700;
             font-size: 64px;
             color: #13294B;
-
+        }
+        b {
+            font-family: 'Optima';
+            font-weight: 600 !important;
         }
     }
 
@@ -523,6 +529,7 @@ button {
         transition: transform 0.28s ease, box-shadow 0.28s ease;
 
         &:hover {
+            cursor: pointer;
             transform: translateY(-6px);
             box-shadow: 0 12px 28px rgba(0, 0, 0, 0.15);
         }
@@ -732,6 +739,7 @@ button {
         transition: transform 0.28s ease, box-shadow 0.28s ease, border-color 0.28s ease;
 
         &:hover {
+            cursor: pointer;
             transform: translateY(-6px);
             box-shadow: 0 12px 28px rgba(102, 143, 143, 0.3);
             border-color: #668F8F;
@@ -939,6 +947,7 @@ button {
         transition: transform 0.28s ease, box-shadow 0.28s ease;
 
         &:hover {
+            cursor: pointer;
             transform: translateY(-6px);
             box-shadow: 0 14px 32px rgba(0, 0, 0, 0.12);
         }
@@ -1488,6 +1497,7 @@ button {
         transition: transform 0.28s ease, box-shadow 0.28s ease;
 
         &:hover {
+            cursor: pointer;
             transform: translateY(-6px);
             box-shadow: 0 12px 28px rgba(66, 98, 139, 0.2);
         }
@@ -1600,6 +1610,7 @@ button {
             transition: transform 0.28s ease, box-shadow 0.28s ease;
 
             &:hover {
+                cursor: pointer;
                 transform: translateY(-6px);
                 box-shadow: 0 12px 28px rgba(161, 199, 202, 0.4);
             }

@@ -28,7 +28,7 @@
 <body>
 
     <div class="layout">
-        <section class="header">
+        <section class="header d-none-md">
             <div class="lg-container">
                 <div class="nav-bar">
                     <div class="nav-brand">
@@ -61,9 +61,26 @@
                 </div>
             </div>
         </section>
+        <div class="header-mobile">
+            <div class="nav-brand">
+                <img src="assets/images/logo-sm.svg" class="logo-sm" alt="">
+            </div>
+            <div class="menu-btn">
+                <svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="35" height="2" fill="#001039" />
+                    <rect y="8" width="35" height="2" fill="#001039" />
+                    <rect y="16" width="35" height="2" fill="#001039" />
+                    <path
+                        d="M4.13269 36V28.63H5.46269L6.8127 32.36C6.9827 32.85 7.1327 33.35 7.3027 33.84H7.3527C7.5227 33.35 7.6627 32.85 7.8327 32.36L9.1627 28.63H10.5027V36H9.4227V32.36C9.4227 31.7 9.5127 30.75 9.5727 30.08H9.5327L8.9427 31.78L7.6627 35.29H6.9427L5.6527 31.78L5.0727 30.08H5.03269C5.08269 30.75 5.17269 31.7 5.17269 32.36V36H4.13269ZM12.3335 36V28.63H16.6835V29.61H13.4935V31.66H16.1935V32.64H13.4935V35.02H16.7935V36H12.3335ZM18.2296 36V28.63H19.4196L21.8596 32.96L22.6296 34.52H22.6796C22.6196 33.76 22.5296 32.87 22.5296 32.07V28.63H23.6296V36H22.4396L19.9996 31.66L19.2296 30.12H19.1796C19.2396 30.88 19.3296 31.73 19.3296 32.53V36H18.2296ZM28.1733 36.13C26.5433 36.13 25.4333 35.24 25.4333 32.84V28.63H26.5933V32.92C26.5933 34.58 27.2533 35.12 28.1733 35.12C29.1033 35.12 29.7833 34.58 29.7833 32.92V28.63H30.9033V32.84C30.9033 35.24 29.8033 36.13 28.1733 36.13Z"
+                        fill="black" />
+                </svg>
+
+            </div>
+        </div>
         <section class="hero-section">
             <div class="md-container">
-                <img src="assets/images/location.svg" class="location" alt="">
+                <img src="assets/images/location.svg" class="location d-none-md" alt="">
+                <img src="assets/images/location-sm.png" class="location d-none-lg" alt="">
                 <h1>
                     屋根や外壁
                 </h1>
@@ -123,7 +140,9 @@
                             <br>
                             <span>
                                 見えないところから
-                            </span> <small>始まります。</small>
+                            </span>
+                            <br class="d-none-lg">
+                            <small>始まります。</small>
                         </h1>
                         <br>
                         <h5>
@@ -131,11 +150,11 @@
                             <br>
                             放置すると<b>内部まで傷みが広がる</b>ことがあります。
                         </h5>
-                        <img src="assets/images/group-300.png" class="group-300" alt="">
+                        <img src="assets/images/group-300.png" class="group-300 d-none-md" alt="">
                     </div>
                     <div class="check-cards-row">
                         <div class="row">
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch1.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -144,7 +163,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch2.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -153,7 +172,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch3.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -162,7 +181,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch4.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -171,7 +190,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch5.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -180,7 +199,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-lg-4">
+                            <div class="col-lg-4 col-6">
                                 <div class="check-card">
                                     <img src="assets/images/ch6.png" class="icon" alt="">
                                     <div class="line"></div>
@@ -191,16 +210,31 @@
                             </div>
                         </div>
                     </div>
+                    <img src="assets/images/group-303.png" class="group-303 d-none-lg w-100" alt="">
                     <div class="warning-card">
                         <div class="icon">
                             <img src="assets/images/warning.png" alt="">
                         </div>
                         <div class="text">
-                            <h3>
-                                雨漏りしてからでは、修繕範囲が広がります。
-                            </h3>
-                            <div class="line"></div>
-                            <div class="line"></div>
+                            <div class="d-show-mobile">
+                                <h3>
+                                    雨漏りしてからでは、
+                                </h3>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                                <h3>
+                                    修繕範囲が広がります。
+                                </h3>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
+                            <div class="d-none-mobile">
+                                <h3>
+                                    雨漏りしてからでは、修繕範囲が広がります。
+                                </h3>
+                                <div class="line"></div>
+                                <div class="line"></div>
+                            </div>
                             <p>
                                 早めに状態を把握しておくことが、結果的に負担を小さくします。
                                 <br>
@@ -217,7 +251,7 @@
             <div class="md-container">
                 <div class="text-area">
                     <h3>
-                        まずは <span>「状態を知る」</span>
+                        まずは <br class="d-show-mobile"> <span>「状態を知る」</span>
                         <br>
                         だけで大丈夫です。
                     </h3>
@@ -233,7 +267,7 @@
                     <h4>
                         大和住建では、
                         <br>
-                        <b> ドローンによる屋根・外壁の無料診断</b>を行っています。
+                        <b> ドローンによる屋根・外壁の無料診断</b> <br class="d-show-mobile"> を行っています。
                         <br>
                         屋根に登らず写真で確認できるため、
                     </h4>
@@ -246,28 +280,28 @@
                 </div>
                 <div class="offers-cards-row">
                     <div class="row">
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-6">
                             <div class="offer-card">
                                 <div class="num">merit<span>1</span></div>
                                 <img src="assets/images/off1.png" alt="">
                                 <p>診断・お見積りは<br><b>無料</b></p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-6">
                             <div class="offer-card">
                                 <div class="num">merit<span>2</span></div>
                                 <img src="assets/images/off2.png" alt="">
                                 <p>ドローンで屋根を<br><b>安全に確認</b></p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-6">
                             <div class="offer-card">
                                 <div class="num">merit<span>3</span></div>
                                 <img src="assets/images/off3.png" alt="">
                                 <p>「まだ検討中」の段階でも<b>相談可</b></p>
                             </div>
                         </div>
-                        <div class="col-lg-3">
+                        <div class="col-lg-3 col-6">
                             <div class="offer-card">
                                 <div class="num">merit<span>4</span></div>
                                 <img src="assets/images/off4.png" alt="">
@@ -312,25 +346,28 @@
                         <img src="assets/images/dron.png" class="dron" alt="">
                         <h1>
                             大和住建が
+                            <br class="d-show-mobile">
                             <span>
                                 選ばれる理由
                             </span>
                         </h1>
                         <br>
                         <h5>
-                            診断・お見積りから、施工後のアフターフォローまで。
+                            診断・お見積りから、<br class="d-show-mobile"> 施工後のアフターフォローまで。
                             <br>
-                            <b>誠実な対応と確かな技術</b>で選ばれています。
+                            <b>誠実な対応と確かな技術</b>で<br class="d-show-mobile">選ばれています。
                         </h5>
                     </div>
                 </div>
                 <div class="reason-card">
                     <div class="content">
-                        <h6>Reason <span>01</span></h6>
-                        <h3>
-                            ドローン診断で<br>
-                            屋根の状態を見える化。
-                        </h3>
+                        <div class="heading">
+                            <h6>Reason <span>01</span></h6>
+                            <h3>
+                                ドローン診断で<br class="d-none-mobile">
+                                屋根の状態を見える化。
+                            </h3>
+                        </div>
                         <p>
                             写真で劣化・ひび割れ・破損を確認しながらご説明するので、<b>納得したうえで判断</b>できます。
                         </p>
@@ -339,13 +376,15 @@
                 </div>
 
                 <div class="reason-card reverse">
-                    <div class="banner"><img src="assets/images/r2.png" alt=""></div>
-                    <div class="content">
-                        <h6>Reason <span>02</span></h6>
-                        <h3>
-                            診断・お見積りまで<br>
-                            無料で対応。
-                        </h3>
+                    <div class="banner order-2"><img src="assets/images/r2.png" alt=""></div>
+                    <div class="content order-1">
+                        <div class="heading">
+                            <h6>Reason <span>02</span></h6>
+                            <h3>
+                                診断・お見積りまで<br>
+                                無料で対応。
+                            </h3>
+                        </div>
                         <p>
                             まず「状態だけ見てほしい」という段階から、費用なしでご相談いただけます。
                         </p>
@@ -354,11 +393,13 @@
 
                 <div class="reason-card">
                     <div class="content">
-                        <h6>Reason <span>03</span></h6>
-                        <h3>
-                            万全の保証体制で、<br>
-                            施工後も続く安心を。
-                        </h3>
+                        <div class="heading">
+                            <h6>Reason <span>03</span></h6>
+                            <h3>
+                                万全の保証体制で、<br>
+                                施工後も続く安心を。
+                            </h3>
+                        </div>
                         <p>
                             工事保証・製品保証・賠償保険を完備。引き渡し後も安心してお任せいただけます。
                         </p>
@@ -367,13 +408,16 @@
                 </div>
 
                 <div class="reason-card reverse">
-                    <div class="banner"><img src="assets/images/r4.png" alt=""></div>
-                    <div class="content">
-                        <h6>Reason <span>04</span></h6>
-                        <h3>
-                            京都市密着で、<br>
-                            迅速・丁寧に対応。
-                        </h3>
+                    <div class="banner order-2"><img src="assets/images/r4.png" alt=""></div>
+                    <div class="content order-1">
+                        <div class="heading">
+
+                            <h6>Reason <span>04</span></h6>
+                            <h3>
+                                京都市密着で、<br>
+                                迅速・丁寧に対応。
+                            </h3>
+                        </div>
                         <p>
                             地域の建物事情を熟知しているからこそ、的確で丁寧なご提案が可能です。
                         </p>
@@ -389,14 +433,24 @@
                     </div>
                     <div class="center-heading">
                         <img src="assets/images/dron.png" class="dron" alt="">
-                        <h1>
-                            <span>屋根・外壁まわりの不安</span><small>を</small>
+                        <div class="d-none-mobile">
+                            <h1>
+                                <span>屋根・外壁まわりの不安</span><small>を</small>
+                            </h1>
+                            <h2>
+                                まとめてご相談いただけます。
+                            </h2>
+                        </div>
+                        <h1 class="d-show-mobile">
+                            <span> 屋根・外壁まわりの
+                                不安</span>をまとめて
+                            <br>
+                            ご相談いただけます。
+                            <br>
+                            <br>
                         </h1>
-                        <h2>
-                            まとめてご相談いただけます。
-                        </h2>
                         <h5>
-                            大和住建では、屋根や外壁に関する <b>さまざまなお悩みに対応</b> しています。
+                            大和住建では、屋根や外壁に関する <br class="d-show-mobile"> <b>さまざまなお悩みに対応</b> しています。
                         </h5>
                     </div>
                 </div>
@@ -1197,7 +1251,7 @@
                         </p>
                     </div>
                     <div class="vector">
-                        <img src="assets/images/footer-vector.png" alt="">
+                        <img src="assets/images/footer-vector.png" class="v-desktop" alt="">
                     </div>
                 </div>
             </div>

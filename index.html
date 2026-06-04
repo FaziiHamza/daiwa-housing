@@ -27,7 +27,7 @@
 
 <body>
 
-    <div class="layout">
+    <div class="layout" id="top">
         <section class="header d-none-md">
             <div class="lg-container">
                 <div class="nav-bar">
@@ -61,12 +61,14 @@
                 </div>
             </div>
         </section>
-        <div class="header-mobile">
+        <div class="header-mobile d-none-lg">
             <div class="nav-brand">
                 <img src="assets/images/logo-sm.svg" class="logo-sm" alt="">
             </div>
-            <div class="menu-btn">
-                <svg width="35" height="39" viewBox="0 0 35 39" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileOffcanvas"
+                aria-controls="mobileOffcanvas" aria-label="Open menu">
+                <svg width="35" height="39" class="menu-open" viewBox="0 0 35 39" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <rect width="35" height="2" fill="#001039" />
                     <rect y="8" width="35" height="2" fill="#001039" />
                     <rect y="16" width="35" height="2" fill="#001039" />
@@ -74,10 +76,49 @@
                         d="M4.13269 36V28.63H5.46269L6.8127 32.36C6.9827 32.85 7.1327 33.35 7.3027 33.84H7.3527C7.5227 33.35 7.6627 32.85 7.8327 32.36L9.1627 28.63H10.5027V36H9.4227V32.36C9.4227 31.7 9.5127 30.75 9.5727 30.08H9.5327L8.9427 31.78L7.6627 35.29H6.9427L5.6527 31.78L5.0727 30.08H5.03269C5.08269 30.75 5.17269 31.7 5.17269 32.36V36H4.13269ZM12.3335 36V28.63H16.6835V29.61H13.4935V31.66H16.1935V32.64H13.4935V35.02H16.7935V36H12.3335ZM18.2296 36V28.63H19.4196L21.8596 32.96L22.6296 34.52H22.6796C22.6196 33.76 22.5296 32.87 22.5296 32.07V28.63H23.6296V36H22.4396L19.9996 31.66L19.2296 30.12H19.1796C19.2396 30.88 19.3296 31.73 19.3296 32.53V36H18.2296ZM28.1733 36.13C26.5433 36.13 25.4333 35.24 25.4333 32.84V28.63H26.5933V32.92C26.5933 34.58 27.2533 35.12 28.1733 35.12C29.1033 35.12 29.7833 34.58 29.7833 32.92V28.63H30.9033V32.84C30.9033 35.24 29.8033 36.13 28.1733 36.13Z"
                         fill="black" />
                 </svg>
-
+                <svg width="35" height="45" class="menu-close" viewBox="0 0 35 45" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M8.46913 28.6L7.44513 27.576L16.5011 18.552L7.44513 9.528L8.46913 8.504L17.4931 17.56L26.5171 8.504L27.5411 9.528L18.4851 18.552L27.5411 27.576L26.5171 28.6L17.4931 19.544L8.46913 28.6ZM4.13269 42V34.63H5.46269L6.8127 38.36C6.9827 38.85 7.1327 39.35 7.3027 39.84H7.3527C7.5227 39.35 7.6627 38.85 7.8327 38.36L9.1627 34.63H10.5027V42H9.4227V38.36C9.4227 37.7 9.5127 36.75 9.5727 36.08H9.5327L8.9427 37.78L7.6627 41.29H6.9427L5.6527 37.78L5.0727 36.08H5.03269C5.08269 36.75 5.17269 37.7 5.17269 38.36V42H4.13269ZM12.3335 42V34.63H16.6835V35.61H13.4935V37.66H16.1935V38.64H13.4935V41.02H16.7935V42H12.3335ZM18.2296 42V34.63H19.4196L21.8596 38.96L22.6296 40.52H22.6796C22.6196 39.76 22.5296 38.87 22.5296 38.07V34.63H23.6296V42H22.4396L19.9996 37.66L19.2296 36.12H19.1796C19.2396 36.88 19.3296 37.73 19.3296 38.53V42H18.2296ZM28.1733 42.13C26.5433 42.13 25.4333 41.24 25.4333 38.84V34.63H26.5933V38.92C26.5933 40.58 27.2533 41.12 28.1733 41.12C29.1033 41.12 29.7833 40.58 29.7833 38.92V34.63H30.9033V38.84C30.9033 41.24 29.8033 42.13 28.1733 42.13Z"
+                        fill="black" />
+                </svg>
+            </button>
+        </div>
+        <div class="offcanvas offcanvas-start mobile-offcanvas d-none-lg" tabindex="-1" id="mobileOffcanvas"
+            aria-labelledby="mobileOffcanvasLabel">
+            <div class="offcanvas-body">
+                <div class="mobile-menu-links">
+                    <a href="#reasons" data-bs-dismiss="offcanvas">大和住建が選ばれる理由</a>
+                    <a href="#services" data-bs-dismiss="offcanvas">サービス</a>
+                    <a href="#works" data-bs-dismiss="offcanvas">施工事例</a>
+                    <a href="#voice" data-bs-dismiss="offcanvas">お客様の声</a>
+                    <a href="#flow" data-bs-dismiss="offcanvas">ご相談から施工までの流れ</a>
+                    <a href="#faq" data-bs-dismiss="offcanvas">よくある質問</a>
+                </div>
+                <div class="action-btns">
+                    <a href="" class="btn btn-line">
+                        <img src="assets/images/line.png" alt="">
+                      LINEでの無料相談はこちら
+                    </a>
+                    <a href="" class="btn btn-mail">
+                        <img src="assets/images/mail.png" alt="">
+                        メールでの無料相談はこちら
+                    </a>
+                    <a href="" class="btn btn-call">
+                        <img src="assets/images/call.png" alt="">
+                        <div class="call">
+                            <small>
+                               電話での無料相談はこちら
+                            </small>
+                            <span>
+                               075-202-8975
+                            </span>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
-        <section class="hero-section">
+        <section class="hero-section" id="home">
             <div class="md-container">
                 <img src="assets/images/location.svg" class="location d-none-md" alt="">
                 <img src="assets/images/location-sm.png" class="location d-none-lg" alt="">
@@ -336,7 +377,7 @@
                 </div>
             </div>
         </section>
-        <section class="reasons-section">
+        <section class="reasons-section" id="reasons">
             <div class="md-container">
                 <div class="reasons-section-inner">
                     <div class="title">
@@ -425,7 +466,7 @@
                 </div>
             </div>
         </section>
-        <section class="services-section">
+        <section class="services-section" id="services">
             <div class="md-container">
                 <div class="services-section-inner">
                     <div class="title">
@@ -657,7 +698,7 @@
                 </a>
             </div>
         </section>
-        <section class="works-section">
+        <section class="works-section" id="works">
             <div class="md-container">
                 <div class="works-section-inner">
                     <div class="title">
@@ -858,7 +899,7 @@
                 </div>
             </div>
         </section>
-        <section class="voice-section">
+        <section class="voice-section" id="voice">
             <div class="md-container">
                 <div class="voice-section-inner">
                     <div class="title">
@@ -941,7 +982,7 @@
                 </div>
             </div>
         </section>
-        <section class="flow-section">
+        <section class="flow-section" id="flow">
             <div class="md-container">
                 <div class="flow-section-inner">
                     <div class="title">
@@ -1103,7 +1144,7 @@
                 </div>
             </div>
         </section>
-        <section class="faq-section">
+        <section class="faq-section" id="faq">
             <div class="md-container">
                 <div class="faq-section-inner">
                     <div class="title">
@@ -1259,7 +1300,7 @@
                 </div>
             </div>
         </section>
-        <section class="footer">
+        <section class="footer" id="contact">
             <div class="md-container">
                 <div class="line d-show-mobile"></div>
                 <div class="f-row">

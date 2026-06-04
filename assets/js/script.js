@@ -34,6 +34,26 @@ $(document).ready(function () {
       $(".header").removeClass("active");
     }
   });
+
+  // Mobile menu icon state toggle
+  const menuButton = document.querySelector(".menu-btn");
+  const mobileOffcanvas = document.getElementById("mobileOffcanvas");
+
+  if (menuButton && mobileOffcanvas) {
+    mobileOffcanvas.addEventListener("show.bs.offcanvas", function () {
+      menuButton.classList.add("is-open");
+      document.documentElement.classList.add("offcanvas-no-scroll");
+    });
+
+    mobileOffcanvas.addEventListener("hide.bs.offcanvas", function () {
+      menuButton.classList.remove("is-open");
+      document.documentElement.classList.remove("offcanvas-no-scroll");
+    });
+
+    mobileOffcanvas.addEventListener("hidden.bs.offcanvas", function () {
+      document.documentElement.classList.remove("offcanvas-no-scroll");
+    });
+  }
 });
 
 // Side Nav
